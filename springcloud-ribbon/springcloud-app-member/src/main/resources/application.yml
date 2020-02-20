@@ -1,7 +1,7 @@
 ##=========服务提供者-会员服务配置========
 #服务端口号
 server:
-  port: 8762
+  port: 8765
 #定义服务名称(服务注册到eureka名称)
 spring:
   application:
