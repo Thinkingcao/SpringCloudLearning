@@ -15,6 +15,8 @@ eureka:
     register-with-eureka: true
     #是否需要从eureka上获取注册信息
     fetch-registry: true
+    #表示eureka client间隔多久去拉取服务器注册信息,默认为30秒
+    registry-fetch-interval-seconds: 10
 
   ##心跳检测与续约时间（测试环境和本地开发环境将值设置小一点，保证服务关闭后，注册中心能够及时踢出）
   instance:
