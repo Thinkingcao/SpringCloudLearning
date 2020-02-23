@@ -1,0 +1,9 @@
+# Consul环境搭建
+官方下载地址下载window版，解压得到一个可执行文件。
+设置环境变量，让我们直接在cmd里可直接使用consul使命。在path后面添加consul所在目录例如D:\soft\consul_1.1.0_windows_amd64
+
+启动consul命
+consul agent -dev -ui -node=cy
+-dev开发服务器模式启动，-node结点名为cy，-ui可以用界面访问，默认能访问。
+
+测试访问地址:http://localhost:8500

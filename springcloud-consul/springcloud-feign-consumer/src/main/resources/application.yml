@@ -1,0 +1,25 @@
+##=========服务消费者-订单服务配置========
+#服务端口号
+server:
+  port: 8787
+
+##配置Spring相关
+spring:
+  ##服务名称
+  application:
+    name: consul-order_consumer
+  ##consul注册中心地址
+  cloud:
+    consul:
+      ##Consul所在主机ip
+      host: localhost
+      ##Consul监听的端口
+      port: 8500
+      discovery:
+        ##配置注册到Consul的服务实例名称(Consul里Feign是通过此名称调用，而非spring.application.name)
+        service-name: order-consumer
+        ##配置服务健康检查地址，供Consul调用
+        healthCheckPath: /health
+        ##Consul 健康检查频率
+        healthCheckInterval: 15s
+
