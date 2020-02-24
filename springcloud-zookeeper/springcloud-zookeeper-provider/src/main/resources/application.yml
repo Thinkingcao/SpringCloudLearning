@@ -1,0 +1,17 @@
+##=========服务生产者-会员服务配置========
+server:
+  port: 8005
+###服务别名----服务注册到注册中心名称
+spring:
+  ##应用服务名称,
+  application:
+    name: zk-member-provider
+  cloud:
+    zookeeper:
+      ##连接zookeeper的地址
+      connect-string: 127.0.0.1:2181
+      discovery:
+        #开启服务注册
+        register: true
+        enabled: true
+

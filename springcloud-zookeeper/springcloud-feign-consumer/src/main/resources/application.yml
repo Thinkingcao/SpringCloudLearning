@@ -1,0 +1,15 @@
+##=========服务消费者-订单服务配置========
+server:
+  port: 8001
+###服务别名----服务注册到注册中心名称
+spring:
+  ##应用服务名称,
+  application:
+    name: zk-order-cosumer
+  cloud:
+    zookeeper:
+      connect-string: 127.0.0.1:2181
+      discovery:
+        register: true
+        enabled: true
+
