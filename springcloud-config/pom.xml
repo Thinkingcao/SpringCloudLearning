@@ -8,6 +8,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>springcloud-config</name>
     <description>SpringCloud整合Spring Cloud Config分布式配置中心，实现文件实时更新、存储</description>
+
     <packaging>pom</packaging>
 
 
