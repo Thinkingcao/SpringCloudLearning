@@ -1,0 +1,24 @@
+##=========服务提供者-会员服务配置========
+#服务端口号
+server:
+  port: 8767
+#定义服务名称(服务注册到eureka名称)
+spring:
+  application:
+    name: app-thinkingcao-member
+#在此指定服务注册中心地址，将当前会员服务注册到eureka注册中心上
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:9000/eureka
+    #启动注册操作，该值默认为true。若设置为fasle将不会启动注册操作。是否需要去检索寻找服务，默认是true
+    register-with-eureka: true
+    #是否需要从eureka上获取注册信息
+    fetch-registry: true
+
+  ##心跳检测与续约时间（测试环境和本地开发环境将值设置小一点，保证服务关闭后，注册中心能够及时踢出）
+  instance:
+    #客户端向Eureka注册中心发送心跳的时间间隔，单位为秒（默认为30s）,（客户端会按照此规则向Eureka服务端发送心跳检测包）
+    lease-renewal-interval-in-seconds: 2
+    #Eureka注册中心在收到客户端最后一次心跳之后等待的时间上限，单位为秒（默认为90s），超过时间则剔除（客户端会按照此规则向Eureka服务端发送心跳检测包）
+    lease-expiration-duration-in-seconds: 2

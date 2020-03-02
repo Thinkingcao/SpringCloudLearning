@@ -8,6 +8,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>springcloud-zuul</name>
     <description>SpringCloud整合Zuul网关服务，实现网关拦截请求、权限验证</description>
+
     <packaging>pom</packaging>
 
 </project>

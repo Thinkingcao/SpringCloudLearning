@@ -1,0 +1,50 @@
+##服务端口配置
+server:
+  port: 9999
+
+#定义网关服务名称(服务注册到eureka名称)
+spring:
+  application:
+    name: zuul-gateway-service
+  #解决响应给客户端浏览器中文乱码问题
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+
+#在此指定服务注册中心地址，将当前订单服务注册到eureka注册中心上
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:9000/eureka
+    #启动注册操作，该值默认为true。若设置为fasle将不会启动注册操作。是否需要去检索寻找服务，默认是true
+    register-with-eureka: true
+    #是否需要从eureka上获取注册信息
+    fetch-registry: true
+    #表示eureka client间隔多久去拉取服务器注册信息,默认为30秒
+    registry-fetch-interval-seconds: 10
+
+  ##心跳检测与续约时间（测试环境和本地开发环境将值设置小一点，保证服务关闭后，注册中心能够及时踢出）
+  instance:
+    #客户端向Eureka注册中心发送心跳的时间间隔，单位为秒（默认为30s）,（客户端会按照此规则向Eureka服务端发送心跳检测包）
+    lease-renewal-interval-in-seconds: 2
+    #Eureka注册中心在收到客户端最后一次心跳之后等待的时间上限，单位为秒（默认为90s），超过时间则剔除（客户端会按照此规则向Eureka服务端发送心跳检测包）
+    lease-expiration-duration-in-seconds: 2
+
+##配置Zuul网关反向代理
+zuul:
+  routes:
+    #定义Zuul网关转发的服务规则api-a和api-b等(这个规则名可以随便取)
+    api-a:
+      #以/api-member/ 的访问请求, URL: 127.0.0.1:9999/zuul-api-member/ ,会转发到会员服务（服务提供者）
+      path: /zuul-api-member/**
+      # 指定服务别名，表示需要转发到哪个服务
+      serviceId: app-thinkingcao-member
+    #定义Zuul网关转发的服务规则api-a
+    api-b:
+      # 以/api-order/ 的访问请求, URL: 127.0.0.1:9999/zuul-api-order/, 会转发到订单服务（服务消费者）
+      path: /zuul-api-order/**
+      # 指定服务别名，表示需要转发到哪个服务
+      serviceId: app-thinkingcao-feign
