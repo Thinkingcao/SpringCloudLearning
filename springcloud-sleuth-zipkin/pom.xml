@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.thinkingcao</groupId>
+    <artifactId>springcloud-sleuth-zipkin</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>springcloud-sleuth-zipkin</name>
+    <description>SpringCloud Sleuth 整合 Zipkin微服务服务链路追踪</description>
+
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>springcloud-eureka-server</module>
+        <module>springcloud-app-member</module>
+        <module>springcloud-app-order</module>
+    </modules>
+
+</project>
