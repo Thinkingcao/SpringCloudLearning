@@ -15,6 +15,7 @@
         <module>springcloud-eureka-server</module>
         <module>springcloud-app-member</module>
         <module>springcloud-app-order</module>
+        <module>springcloud-app-pay</module>
     </modules>
 
 </project>
