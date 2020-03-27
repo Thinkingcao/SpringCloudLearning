@@ -6,13 +6,10 @@ server:
 spring:
   application:
     name: app-thinkingcao-order
-
   #zipkin服务端地址
   zipkin:
     base-url: http://127.0.0.1:9411/
-    #全部采集
-    sleuth:
-      sampler:
+  #全部采集
   sleuth:
     sampler:
       probability: 1.0

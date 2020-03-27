@@ -9,10 +9,10 @@ spring:
   #zipkin服务端地址
   zipkin:
     base-url: http://127.0.0.1:9411/
-    #全部采集
-    sleuth:
-      sampler:
-        probability: 1.0
+  #全部采集
+  sleuth:
+    sampler:
+      probability: 1.0
 
 #在此指定服务注册中心地址，将当前会员服务注册到eureka注册中心上
 eureka:
