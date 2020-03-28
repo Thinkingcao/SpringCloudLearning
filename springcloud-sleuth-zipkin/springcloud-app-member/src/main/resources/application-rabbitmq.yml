@@ -1,0 +1,30 @@
+spring:
+  zipkin:
+    #发送数据类型 kafaka、rabbitmq、web
+    sender:
+      type: rabbit
+  sleuth:
+    #全部采集,默认的采样比例为: 0.1(即10%),1.0则表示全部采集
+    sampler:
+      probability: 1.0
+    web:
+      enabled: true
+  #rabbitmq配置
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    listener: # 这里配置了重试策略
+      direct:
+        retry:
+          enabled: true
+      simple:
+        retry:
+          enabled: true
+
+###======pom.xml需增加rabbitmq依赖如下=======##
+#    <dependency>
+#    <groupId>org.springframework.amqp</groupId>
+#    <artifactId>spring-rabbit</artifactId>
+#    </dependency>

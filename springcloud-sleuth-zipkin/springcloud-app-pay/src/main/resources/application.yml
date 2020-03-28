@@ -7,10 +7,13 @@ spring:
   application:
     name: app-thinkingcao-pay
 
-  #zipkin服务端地址
+  #zipkin服务端地址(sleuth-cli收集信息后通过http传输到zinkin-server)
   zipkin:
     base-url: http://127.0.0.1:9411/
-  #全部采集
+    #发送数据类型 kafaka、rabbitmq、web
+    sender:
+      type: WEB
+  #全部采集,默认的采样比例为: 0.1(即10%),1.0则表示全部采集
   sleuth:
     sampler:
       probability: 1.0
