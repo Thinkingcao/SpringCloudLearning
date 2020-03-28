@@ -9,6 +9,8 @@ spring:
   #zipkin服务端地址(sleuth-cli收集信息后通过http传输到zinkin-server)
   zipkin:
     base-url: http://127.0.0.1:9411/
+    #设置成false,表示这只是一个URL地址而不是服务名称
+    discovery-client-enabled: false
     #发送数据类型 kafaka、rabbitmq、web
     sender:
       type: WEB

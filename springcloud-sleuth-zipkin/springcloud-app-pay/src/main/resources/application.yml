@@ -13,6 +13,8 @@ spring:
     #发送数据类型 kafaka、rabbitmq、web
     sender:
       type: WEB
+    #设置成false,表示这只是一个URL地址而不是服务名称
+    discovery-client-enabled: false
   #全部采集,默认的采样比例为: 0.1(即10%),1.0则表示全部采集
   sleuth:
     sampler:
