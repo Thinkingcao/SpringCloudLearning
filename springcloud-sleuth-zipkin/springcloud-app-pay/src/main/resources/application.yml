@@ -11,7 +11,7 @@ spring:
   zipkin:
     base-url: http://127.0.0.1:9411/
     #设置成false,表示这只是一个URL地址而不是服务名称（nacos与zipkin一起使用时可能出现此问题）
-    discoveryClientEnabled: false
+    #discoveryClientEnabled: false
     #发送数据类型 kafaka、rabbitmq、web
     sender:
       type: WEB
