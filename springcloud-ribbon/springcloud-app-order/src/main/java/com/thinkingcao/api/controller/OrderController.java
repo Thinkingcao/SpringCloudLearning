@@ -2,6 +2,7 @@ package com.thinkingcao.api.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
+import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -18,6 +19,10 @@ public class OrderController {
     @Autowired
     private RestTemplate restTemplate;
 
+
+    @Autowired
+    private LoadBalancerClient loadBalancerClient;
+
     //订单服务(消费者)调用会员服务(生产者)接口
     @RequestMapping("/getOrderToMember")
     public String getOrderToMember() {
@@ -33,4 +38,17 @@ public class OrderController {
     RestTemplate restTemplate() {
         return new RestTemplate();
     }
+
+
+
+
+    //订单服务(消费者)调用会员服务(生产者)接口
+  /*  @RequestMapping("/getOrderToMember")
+    public String getOrderToMember() {
+        //String url = "http://app-thinkingcao-member/getMember";
+        ServiceInstance serviceInstance = loadBalancerClient.choose("app-thinkingcao-member");
+        String response = String.format("http://%s:%s",serviceInstance.getHost(), serviceInstance.getPort()+"/getMember");
+        System.out.println("response= " + response);
+        return response;
+    }*/
 }
