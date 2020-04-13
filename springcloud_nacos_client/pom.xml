@@ -33,13 +33,13 @@
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-            <version>2.1.0.RELEASE</version>
+            <version>2.1.1.RELEASE</version>
         </dependency>
         <!-- SpringCloud整合nacos配置中心-->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
-            <version>2.1.0.RELEASE</version>
+            <version>2.1.1.RELEASE</version>
         </dependency>
         <!-- ============ 正式版本end ========= -->
 
