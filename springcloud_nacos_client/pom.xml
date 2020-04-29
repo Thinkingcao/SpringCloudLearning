@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.mayikt</groupId>
+    <groupId>com.thinkingcao</groupId>
     <artifactId>springcloud_nacos_client</artifactId>
     <version>1.0-SNAPSHOT</version>
     <parent>
@@ -33,16 +33,15 @@
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-            <version>2.1.0.RELEASE</version>
+            <version>2.1.1.RELEASE</version>
         </dependency>
         <!-- SpringCloud整合nacos配置中心-->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
-            <version>2.1.0.RELEASE</version>
+            <version>2.1.1.RELEASE</version>
         </dependency>
         <!-- ============ 正式版本end ========= -->
-
 
         
         <!-- ============ 孵化版本start ========= -->
