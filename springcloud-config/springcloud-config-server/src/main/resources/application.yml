@@ -1,0 +1,32 @@
+#端口号
+server:
+  port: 8080
+
+#定义服务名称(服务注册到eureka名称)
+spring:
+  application:
+    name: app-config-server
+  #Spring Cloud Config Server端配置
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/Thinkingcao/springcloud-config-repo
+          username: 617271837@qq.com
+          password: xxxxxxxxxxx
+          default-label: master
+          basedir: D:\path\config-properties
+          search-paths: config-respo
+
+
+#在此指定服务注册中心地址，将当前服务注册到eureka注册中心上
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8888/eureka
+    #启动注册操作，该值默认为true。若设置为fasle将不会启动注册操作。是否需要去检索寻找服务，默认是true
+    register-with-eureka: true
+    #是否需要从eureka上获取注册信息
+    fetch-registry: true
+
+

@@ -1,0 +1,25 @@
+#服务端口号
+server:
+  port: 8888
+#定义服务名称(服务注册到eureka名称)
+spring:
+  application:
+    name: app-thinkingcao-eureka
+eureka:
+  instance:
+    #Eureka注册中心ip地址
+    hostname: 127.0.0.1
+  client:
+    serviceUrl:
+      #注册地址
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+    #表示是否需要将自己注册给自己的注册中心，因为自己是注册中心，单机版本时不需要，设置为false（集群的时候需要是为true）
+    register-with-eureka: false
+    #因为自己是注册中心，不需要去检索服务信息,单机版本时不需要，设置为false（集群的时候需要是为true）
+    fetch-registry: false
+  #Eureka自我保护机制
+  server:
+    #关闭eureka自我保护机制false（默认为true）
+    enable-self-preservation: false
+    # 清理间隔（单位毫秒，默认是60*1000）
+    eviction-interval-timer-in-ms: 2000
