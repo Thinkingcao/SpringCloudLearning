@@ -1,0 +1,63 @@
+#端口号
+server:
+  port: 8080
+
+#定义服务名称(服务注册到eureka名称)
+spring:
+  application:
+    name: app-config-server
+  #Spring Cloud Config Server端配置
+  cloud:
+    config:
+      server:
+        git:
+          #远程存储库的URI地址。
+          uri: https://gitee.com/Thinkingcao/springcloud-config-repo
+          #使用远程Git仓库验证用户名。
+          username: xxxxxxxxx
+          #使用远程Git仓库密码。
+          password: xxxxxxxxx
+          #指定远程Git仓库的分支
+          default-label: master
+          #指定本地仓库地址用来存储获取远程Git上的配置文件
+          basedir: G:\temp\path\config-properties
+          ##git仓库地址下的相对地址，可以配置多个，用，分割，也就是配置文件所在根目录文件夹名称
+          search-paths: config-respo
+      #标记以指示启用配置服务器发现（配置服务器URL将通过发现查找）。
+      discovery:
+        enabled: true
+    #bus配置，标记以打开跟踪
+    bus:
+      trace:
+        enabled: true
+
+  #rabbitmq配置
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: admin
+    password: 111111
+    virtual-host: /
+
+#在此指定服务注册中心地址，将当前服务注册到eureka注册中心上
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8888/eureka
+    #启动注册操作，该值默认为true。若设置为fasle将不会启动注册操作。是否需要去检索寻找服务，默认是true
+    register-with-eureka: true
+    #是否需要从eureka上获取注册信息
+    fetch-registry: true
+
+#暴露bus刷新配置的端点
+management:
+  #关闭安全校验
+  security:
+    enable: false
+  #暴露端点
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh  # 需要开启的端点
+        #exclude:             # 不需要开启的端点
+      base-path: /actuator   # 访问端点根路径，默认为 /actuator

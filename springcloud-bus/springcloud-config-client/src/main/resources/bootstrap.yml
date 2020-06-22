@@ -1,0 +1,52 @@
+#服务端口号
+server:
+  port: 8081
+#定义服务名称(服务注册到eureka名称)
+spring:
+  application:
+    name: order
+  #cloud config配置
+  cloud:
+    config:
+      name: ${spring.application.name}
+      profile: dev   #profile对应config server所获取的配置文件中的{profile}
+      label: master  #指定Git仓库的分支，对应config server所获取的配置文件的{label}
+      discovery:
+        #标记以指示启用配置服务器发现（配置服务器URL将通过发现查找）
+        enabled: true
+        #读取config-server注册地址
+        service-id: app-config-server
+      #uri: http://127.0.0.1:8080/
+
+    #bus配置，标记以打开跟踪
+    bus:
+      trace:
+        enabled: true
+  #rabbitmq配置
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: admin
+    password: 111111
+    virtual-host: /
+
+#在此指定服务注册中心地址，将当前服务注册到eureka注册中心上
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8888/eureka
+    #启动注册操作，该值默认为true。若设置为fasle将不会启动注册操作。是否需要去检索寻找服务，默认是true
+    register-with-eureka: true
+    #是否需要从eureka上获取注册信息
+    fetch-registry: true
+
+#暴露bus刷新配置的端点
+management:
+  #关闭安全校验
+  security:
+    enable: false
+  #暴露端点
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
