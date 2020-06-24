@@ -1,0 +1,17 @@
+server:
+  port: 8016
+#定义服务名称
+spring:
+  application:
+    name: product-service
+
+#在此指定服务注册中心地址，将当前服务注册到eureka注册中心上
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8888/eureka
+    #启动注册操作，该值默认为true。若设置为fasle将不会启动注册操作。是否需要去检索寻找服务，默认是true
+    register-with-eureka: true
+    #是否需要从eureka上获取注册信息
+    fetch-registry: true
+
