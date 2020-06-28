@@ -3,7 +3,21 @@ server:
 #定义服务名称
 spring:
   application:
-    name: api-gateway
+    name: api-gateway   # 应用名称
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      # 路由规则
+      routes:
+        - id: product-service        # 路由 ID，唯一
+          uri: lb://product-service  # 目标 URI，路由到微服务的地址
+          predicates:                # 断言（判断条件）
+            - Path=/product/**       # 匹配对应 URL 的请求，将匹配到的请求追加在目标 URI 之后
+
+
 
 #在此指定服务注册中心地址，将当前服务注册到eureka注册中心上
 eureka:

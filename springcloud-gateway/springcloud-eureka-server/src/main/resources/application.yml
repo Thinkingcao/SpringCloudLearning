@@ -46,3 +46,8 @@ management:
     web:
       exposure:
         include: bus-refresh
+
+#eureka日志级别
+logging:
+  level:
+    com.netflix: warn
