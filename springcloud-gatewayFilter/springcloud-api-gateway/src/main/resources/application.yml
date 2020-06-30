@@ -1,0 +1,38 @@
+server:
+  port: 8015
+#定义服务名称
+spring:
+  application:
+    name: api-gateway   # 应用名称
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          # 是否与服务发现组件进行结合，通过 serviceId 转发到具体服务实例。
+          enabled: true      # 是否开启基于服务发现的路由规则
+          lower-case-service-id: true  # 是否将服务名称转小写
+      # 路由规则
+      routes:
+        #通过Path匹配路由
+        - id: product-service        # 路由 ID，唯一
+          uri: lb://product-service  # 目标 URI，路由到微服务的地址
+          predicates:                # 断言（判断条件）
+            - Path=/product/**       # 匹配对应 URL 的请求，将匹配到的请求追加在目标 URI 之后
+          filters:
+            - AddRequestHeader=X-Request-red, blue
+            - AddRequestParameter=key,value
+
+#在此指定服务注册中心地址，将当前服务注册到eureka注册中心上
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8888/eureka
+    #启动注册操作，该值默认为true。若设置为fasle将不会启动注册操作。是否需要去检索寻找服务，默认是true
+    register-with-eureka: true
+    #是否需要从eureka上获取注册信息
+    fetch-registry: true
+
+#Gateway日志级别
+logging:
+  level:
+    org.springframework.cloud.gateway: debug
