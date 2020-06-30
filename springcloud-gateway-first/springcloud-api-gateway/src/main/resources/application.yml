@@ -1,0 +1,21 @@
+#端口号
+server:
+  port: 8015
+#定义服务名称
+spring:
+  application:
+    name: api-gateway   # 应用名称
+  cloud:
+    gateway:
+      # 路由规则
+      routes:
+        #通过Path匹配路由
+        - id: product-service        # 路由 ID，唯一
+          uri: http://127.0.0.1:8016  # 目标 URI，路由到接口http://127.0.0.1:8015/product/getProductInfo
+          predicates:                # 断言（判断条件）
+            - Path=/product/**       # 匹配对应 URL 的请求，将匹配到的请求追加在目标 URI 之后
+
+#Gateway日志级别
+logging:
+  level:
+    org.springframework.cloud.gateway: debug

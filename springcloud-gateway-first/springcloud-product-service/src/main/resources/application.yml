@@ -1,0 +1,6 @@
+server:
+  port: 8016
+#定义服务名称
+spring:
+  application:
+    name: product-service
