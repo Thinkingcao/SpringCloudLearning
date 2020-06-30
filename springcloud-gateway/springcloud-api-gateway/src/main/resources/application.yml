@@ -11,14 +11,67 @@ spring:
           # 是否与服务发现组件进行结合，通过 serviceId 转发到具体服务实例。
           enabled: true      # 是否开启基于服务发现的路由规则
           lower-case-service-id: true  # 是否将服务名称转小写
+
       # 路由规则
       routes:
+        #通过Cookie匹配路由
+        - id: product-service        # 路由 ID，唯一
+          uri: lb://product-service  # 目标 URI，路由到微服务的地址
+          predicates:                # 断言（判断条件）
+            - Cookie=sessionId, 111111      # Cookie name = sessionId  ，Cookie value= 111111
+        #通过Path匹配路由
         - id: product-service        # 路由 ID，唯一
           uri: lb://product-service  # 目标 URI，路由到微服务的地址
           predicates:                # 断言（判断条件）
             - Path=/product/**       # 匹配对应 URL 的请求，将匹配到的请求追加在目标 URI 之后
-
-
+        #通过Between匹配
+        - id: product-service        # 路由 ID，唯一
+          uri: lb://product-service  # 目标 URI，路由到微服务的地址
+          predicates:                # 断言（判断条件）
+            - Between=2020-07-01T00:00:00+08:00[Asia/Shanghai] , 2020-08-01T00:00:00+08:00[Asia/Shanghai]
+        #通过Before匹配
+        - id: product-service        # 路由 ID，唯一
+          uri: lb://product-service  # 目标 URI，路由到微服务的地址
+          predicates:                # 断言（判断条件）
+            - Before=2020-07-01T00:00:00+08:00[Asia/Shanghai]       # 请求时间在 2020年7月1日0点0分0秒之前的所有请求都转发到商品服务实例product-service 上
+        #通过After匹配
+        - id: product-service        # 路由 ID，唯一
+          uri: lb://product-service  # 目标 URI，路由到微服务的地址
+          predicates:                # 断言（判断条件）
+            - After=2020-07-01T00:00:00+08:00[Asia/Shanghai]       # 请求时间在 2020年7月1日0点0分0秒之后的所有请求都转发到商品服务实例product-service 上
+        #通过host匹配
+        - id: product-service        # 路由 ID，唯一
+          uri: lb://product-service  # 目标 URI，路由到微服务的地址
+          predicates:                # 断言（判断条件）
+            - Host=**.baidu.com      # 使用 . *  去匹配多个host，例如：www.baidu.com/md.baidu.com
+        #通过Method匹配
+        - id: product-service        # 路由 ID，唯一
+          uri: lb://product-service  # 目标 URI，路由到微服务的地址
+          predicates:                # 断言（判断条件）
+            - Method=GET             # 所有以GET方式的请求都会被路由到product-service服务。
+        #通过Query匹配
+        - id: product-service        # 路由 ID，唯一
+          uri: lb://product-service  # 目标 URI，路由到微服务的地址
+          predicates:                # 断言（判断条件）
+            - Query=name, Thinkingcao
+        #通过RemoteAddr匹配
+        - id: product-service        # 路由 ID，唯一
+          uri: lb://product-service  # 目标 URI，路由到微服务的地址
+          predicates:                # 断言（判断条件）
+            - RemoteAddr=192.168.10.1/24 #远程请求IP地址满足192.168.10网段即可匹配
+        ##通过Weight匹配
+        #商品服务1权重为8
+        - id: product-service1
+          uri: lb://product-service1
+          predicates:
+            - Path=/product/**
+            - Weight=product-service1, 8
+        #商品服务2权重为2
+        - id: product-service2
+          uri: lb://product-service2
+          predicates:
+            - Path=/product/**
+            - Weight=product-service2, 2
 
 #在此指定服务注册中心地址，将当前服务注册到eureka注册中心上
 eureka:
