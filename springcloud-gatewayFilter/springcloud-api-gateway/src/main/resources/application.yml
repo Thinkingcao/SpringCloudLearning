@@ -21,6 +21,7 @@ spring:
           filters:
             - AddRequestHeader=X-Request-red, blue
             - AddRequestParameter=key,value
+            - StripPrefix=1
 
 #在此指定服务注册中心地址，将当前服务注册到eureka注册中心上
 eureka:
