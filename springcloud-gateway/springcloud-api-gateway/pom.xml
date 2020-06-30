@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>spring-api-gateway</artifactId>
+    <artifactId>springcloud-api-gateway</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>springcloud-api-gateway</name>
     <description>SpringCloud整合Gateway网关服务</description>
