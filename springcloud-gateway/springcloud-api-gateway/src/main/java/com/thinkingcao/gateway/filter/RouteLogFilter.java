@@ -19,7 +19,7 @@ import static org.springframework.cloud.gateway.support.ServerWebExchangeUtils.*
  * @author: cao_wencao
  * @date: 2020-06-28 13:42
  */
-@Slf4j(topic = "Route")
+@Slf4j(topic = "RouteLog")
 @Component
 public class RouteLogFilter implements GlobalFilter {
 
