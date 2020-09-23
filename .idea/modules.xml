@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/SpringCloudLearning.iml" filepath="$PROJECT_DIR$/.idea/SpringCloudLearning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-ribbon/springcloud-app-member/springcloud-app-member.iml" filepath="$PROJECT_DIR$/springcloud-ribbon/springcloud-app-member/springcloud-app-member.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-ribbon/springcloud-app-order/springcloud-app-order.iml" filepath="$PROJECT_DIR$/springcloud-ribbon/springcloud-app-order/springcloud-app-order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-config/springcloud-config.iml" filepath="$PROJECT_DIR$/springcloud-config/springcloud-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-eureka/springcloud-eureka.iml" filepath="$PROJECT_DIR$/springcloud-eureka/springcloud-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-ribbon/springcloud-eureka-server/springcloud-eureka-server.iml" filepath="$PROJECT_DIR$/springcloud-ribbon/springcloud-eureka-server/springcloud-eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-eureka/springcloud-eureka-server/springcloud-eureka-server (1).iml" filepath="$PROJECT_DIR$/springcloud-eureka/springcloud-eureka-server/springcloud-eureka-server (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-ribbon/springcloud-ribbon.iml" filepath="$PROJECT_DIR$/springcloud-ribbon/springcloud-ribbon.iml" />
+    </modules>
+  </component>
+</project>

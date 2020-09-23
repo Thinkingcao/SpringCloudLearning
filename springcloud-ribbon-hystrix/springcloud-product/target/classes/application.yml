@@ -1,0 +1,13 @@
+server:
+  port: 8013
+
+spring:
+  application:
+    name: nacos-product
+  cloud:
+    nacos:
+      discovery:
+        #开启服务注册与发现功能
+        enabled: true
+        #服务注册与发现地址
+        server-addr: 130.252.102.241:8848

@@ -1,0 +1,26 @@
+server:
+  port: 8012
+spring:
+  application:
+    name: nacos-order
+  cloud:
+    nacos:
+      discovery:
+        enabled: true
+        server-addr: 130.252.102.241:8848
+        register-enabled: true
+feign:
+  hystrix:
+    enabled: true
+#hystrix:
+#  command:
+#    default:
+#      execution:
+#        timeout:
+#          enabled: true
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 120000
+#ribbon:
+#  ReadTimeout: 6000
+#  ConnectTimeout: 5000

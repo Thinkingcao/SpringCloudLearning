@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springcloud-eureka-server" />
+        <module name="springcloud-app-member" />
+        <module name="springcloud-eureka-server (1)" />
+        <module name="springcloud-config" />
+        <module name="springcloud-app-order" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="springcloud-app-member" target="1.8" />
+      <module name="springcloud-app-order" target="1.8" />
+      <module name="springcloud-config" target="1.8" />
+      <module name="springcloud-eureka" target="1.8" />
+      <module name="springcloud-eureka-client" target="1.8" />
+      <module name="springcloud-eureka-server" target="1.8" />
+      <module name="springcloud-eureka-server (1)" target="1.8" />
+      <module name="springcloud-eureka-server (2)" target="1.8" />
+      <module name="springcloud-feign" target="1.8" />
+      <module name="springcloud-ribbon" target="1.8" />
+      <module name="SpringCloudLearning" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_STRING" value="-encoding utf-8" />
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="SpringCloudLearning" options="" />
+      <module name="springcloud-app-member" options="-parameters" />
+      <module name="springcloud-app-order" options="-parameters" />
+      <module name="springcloud-config" options="-parameters" />
+      <module name="springcloud-eureka" options="" />
+      <module name="springcloud-eureka-client" options="" />
+      <module name="springcloud-eureka-server" options="-parameters" />
+      <module name="springcloud-eureka-server (1)" options="-parameters" />
+      <module name="springcloud-eureka-server (2)" options="" />
+      <module name="springcloud-feign" options="" />
+      <module name="springcloud-ribbon" options="" />
+    </option>
+  </component>
+</project>

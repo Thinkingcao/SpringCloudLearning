@@ -1,0 +1,47 @@
+server:
+  port: 9101
+spring:
+  application:
+    name: trace-1
+  sleuth:
+    sampler:
+      probability: 1
+  zipkin:
+#    base-url: http://localhost:9411/
+    sender:
+      type: rabbit
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: springcloud
+    password: admin
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+feign:
+  hystrix:
+    enabled: true
+# 超时配置方法一：hystrix时间要长于ribbon，否则ribbon的重试机制就没有意义了（默认重试三次）
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: true
+        isolation:
+          thread:
+            timeoutInMilliseconds: 9000
+ribbon:
+  ConnectTimeout: 8000
+  ReadTimeout: 8000
+# 超时设置方法二
+#hystrix:
+#  command:
+#    default:
+#      execution:
+#        timeout:
+#          enabled: false
+#ribbon:
+#  ConnectTimeout: 8000
+#  ReadTimeout: 8000

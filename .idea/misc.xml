@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="ES6" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-app-order/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-app-member/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringCloud系列教程(一)：服务的注册与发现(Eureka)/springcloud-eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringCloud系列教程(二)：搭建服务提供者和服务消费者之Rest+Ribbon方式/springcloud-app-member/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringCloud系列教程(二)：搭建服务提供者和服务消费者之Rest+Ribbon方式/springcloud-app-order/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringCloud系列教程(二)：搭建服务提供者和服务消费者之Rest+Ribbon方式/springcloud-eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-2.0-eureka/springcloud-eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-ribbon/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-ribbon/springcloud-app-member/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-ribbon/springcloud-app-order/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-ribbon/springcloud-eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-eureka/springcloud-eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-config/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_10" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>

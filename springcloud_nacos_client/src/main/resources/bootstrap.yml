@@ -15,7 +15,7 @@ spring:
         group: DEFAULT_GROUP
         #类型(默认加载.properties)，默认指定查找nacos-config.yml
         file-extension: yaml
-  #读取环境配置，指定环境后，还会加载nacos-config-prod.yml文件
+  #读取环境配置，指定环境后，还会加载nacos-config-dev.yml文件
   profiles:
     active: dev
 

@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dab21d81-0e86-48cb-a5f2-388f122c17c0" name="Default Changelist" comment="删除spring cloud config工程" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/Thinkingcao/SpringCloudLearning" />
+        <option value="https://github.com/Thinkingcao/springcloud_nacos_client.git" />
+        <option value="https://github.com/liangzhifa/springcloud-alibaba-seata-feign" />
+        <option value="https://github.com/nacos-group/nacos-examples" />
+      </set>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="F:\apache-maven\mvnRepository\Repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../apache-maven/apache-maven-3.5.0" />
+        <option name="userSettingsFile" value="F:\apache-maven\apache-maven-3.5.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1dWCnKJ3xBAa4zPfXDY3mjYYDli" />
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Spring</id>
+          </State>
+          <State>
+            <id>Spring BootSpring</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>SpringBootApplicationYaml</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="ignore_missing_gitignore" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/springcloud-config" />
+    <property name="node.js.path.for.package.jscs" value="project" />
+    <property name="node.js.selected.package.jscs" value="" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.33690795" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.AppEurekaServer (1)">
+    <configuration name="AppEurekaServer (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="springcloud-eureka-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.thinkingcao.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.thinkingcao.api.AppEurekaServer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppEurekaServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springcloud-eureka-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.thinkingcao.api.AppEurekaServer" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppMemberProvider" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springcloud-app-member" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.thinkingcao.api.AppMemberProvider" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppOrderConsumer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springcloud-app-order" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.thinkingcao.api.AppOrderConsumer" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringcloudConfigApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springcloud-config" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.springcloudconfig.SpringcloudConfigApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.AppEurekaServer" />
+      <item itemvalue="Spring Boot.AppOrderConsumer" />
+      <item itemvalue="Spring Boot.AppMemberProvider" />
+      <item itemvalue="Spring Boot.SpringcloudConfigApplication" />
+      <item itemvalue="Spring Boot.AppEurekaServer (1)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.AppEurekaServer (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\jiuyv\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dab21d81-0e86-48cb-a5f2-388f122c17c0" name="Default Changelist" comment="" />
+      <created>1581491634634</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581491634634</updated>
+      <workItem from="1581491636261" duration="7170000" />
+      <workItem from="1581567772878" duration="4598000" />
+      <workItem from="1581781576713" duration="199000" />
+      <workItem from="1581781919703" duration="267000" />
+      <workItem from="1581782195023" duration="952000" />
+      <workItem from="1581783282050" duration="3345000" />
+      <workItem from="1582035858106" duration="985000" />
+      <workItem from="1582095062350" duration="1036000" />
+      <workItem from="1582096319897" duration="261000" />
+      <workItem from="1582096628588" duration="730000" />
+      <workItem from="1582097438502" duration="2418000" />
+      <workItem from="1582100022961" duration="12276000" />
+      <workItem from="1582125502712" duration="641000" />
+      <workItem from="1582126234426" duration="452000" />
+      <workItem from="1582126803843" duration="557000" />
+      <workItem from="1582127441683" duration="304000" />
+      <workItem from="1582127810589" duration="767000" />
+      <workItem from="1582128654106" duration="293000" />
+      <workItem from="1582129315979" duration="707000" />
+      <workItem from="1592531637925" duration="363000" />
+      <workItem from="1592534464028" duration="119000" />
+    </task>
+    <task id="LOCAL-00001" summary="删除spring cloud config工程">
+      <created>1592531806918</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1592531806919</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="删除spring cloud config工程" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除spring cloud config工程" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="401" y="0" key="CommitChangelistDialog2" timestamp="1592534580360">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="401" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1592534580360" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1592531976848">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592531976848" />
+    <state x="687" y="196" key="FileChooserDialogImpl" timestamp="1592531929196">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="687" y="196" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1592531929196" />
+    <state x="454" y="148" key="RollbackChangesDialog" timestamp="1592534576985">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="454" y="148" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592534576985" />
+    <state x="452" y="186" key="Vcs.Push.Dialog.v2" timestamp="1592531813543">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="452" y="186" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592531813543" />
+    <state x="692" y="410" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592534535263">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="692" y="410" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592534535263" />
+    <state x="158" y="99" key="new project wizard" timestamp="1592531930792">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="158" y="99" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1592531930792" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArquillianSettingsConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.33690795" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="Copyright.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Detection</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.33690795" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.33690795" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.33690795" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>SpringCloudLearning</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.33690795" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: ch.qos.logback:logback-classic:1.2.3</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.33690795" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

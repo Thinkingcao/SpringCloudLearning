@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d7d311ba-f87c-458b-94de-2ba13fb13ede" name="Default Changelist" comment="Spring Cloud系列教程(十六)：下一代网关服务Gateway(Finchley版本)">
+      <change beforePath="$PROJECT_DIR$/../springcloud-bus/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud-bus/springcloud-config-client/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud-bus/springcloud-config-server/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud-gateway-first/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="F:\apache-maven\mvnRepository\Repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../apache-maven/apache-maven-3.5.0" />
+        <option name="userSettingsFile" value="F:\apache-maven\apache-maven-3.5.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1dhYPfALy6m2m4jvm8tR5BSaFuf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../springcloud-gatewayFilter" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.jscs" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.jscs" value="" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.thinkingcao.gateway.filter" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.AppEurekaServer">
+    <configuration name="AppEurekaServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springcloud-eureka-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.thinkingcao.gateway.AppEurekaServer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppGateway" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="springcloud-api-gateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.thinkingcao.gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.thinkingcao.gateway.AppGateway" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppProduct" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="springcloud-product-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.thinkingcao.product.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.thinkingcao.product.AppProduct" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\jiuyv\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d7d311ba-f87c-458b-94de-2ba13fb13ede" name="Default Changelist" comment="" />
+      <created>1592878768274</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592878768274</updated>
+      <workItem from="1592878772259" duration="5877000" />
+      <workItem from="1592982128613" duration="5689000" />
+      <workItem from="1593309460571" duration="14167000" />
+      <workItem from="1593401202162" duration="825000" />
+      <workItem from="1593483514882" duration="12001000" />
+      <workItem from="1593508286855" duration="70000" />
+    </task>
+    <task id="LOCAL-00001" summary="Spring Cloud系列教程(十六)：下一代网关服务Gateway(Finchley版本)">
+      <created>1592987821198</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1592987821198</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Spring Cloud系列教程(十六)：下一代网关服务Gateway(Finchley版本)">
+      <created>1593323899906</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1593323899906</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Spring Cloud系列教程(十六)：下一代网关服务Gateway(Finchley版本)">
+      <created>1593339956258</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1593339956258</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Spring Cloud系列教程(十六)：下一代网关服务Gateway(Finchley版本)">
+      <created>1593484858173</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1593484858173</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Spring Cloud系列教程(十六)：下一代网关服务Gateway(Finchley版本)">
+      <created>1593495325648</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1593495325648</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Spring Cloud系列教程(十六)：下一代网关服务Gateway(Finchley版本)">
+      <created>1593508324369</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1593508324369</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Spring Cloud系列教程(十六)：下一代网关服务Gateway(Finchley版本)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring Cloud系列教程(十六)：下一代网关服务Gateway(Finchley版本)" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="202" y="0" key="CommitChangelistDialog2" timestamp="1593508319807">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="202" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1593508319807" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1593508356642">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593508356641" />
+    <state x="687" y="214" key="FileChooserDialogImpl" timestamp="1593508163203">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="687" y="214" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1593508163203" />
+    <state width="1531" height="399" key="GridCell.Tab.0.bottom" timestamp="1593508164542">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1531" height="399" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593508164542" />
+    <state width="1531" height="399" key="GridCell.Tab.0.center" timestamp="1593508164541">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1531" height="399" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593508164541" />
+    <state width="1531" height="399" key="GridCell.Tab.0.left" timestamp="1593508164541">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1531" height="399" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593508164541" />
+    <state width="1531" height="399" key="GridCell.Tab.0.right" timestamp="1593508164541">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1531" height="399" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593508164541" />
+    <state width="1531" height="399" key="GridCell.Tab.1.bottom" timestamp="1593508164542">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1531" height="399" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593508164542" />
+    <state width="1531" height="399" key="GridCell.Tab.1.center" timestamp="1593508164542">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1531" height="399" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593508164542" />
+    <state width="1531" height="399" key="GridCell.Tab.1.left" timestamp="1593508164542">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1531" height="399" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593508164542" />
+    <state width="1531" height="399" key="GridCell.Tab.1.right" timestamp="1593508164542">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1531" height="399" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593508164542" />
+    <state x="329" y="77" key="SettingsEditor" timestamp="1593329175173">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="329" y="77" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1593329175173" />
+    <state x="452" y="186" key="Vcs.Push.Dialog.v2" timestamp="1593508326900">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="452" y="186" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1593508326900" />
+    <state x="316" y="122" key="new project wizard" timestamp="1593496755715">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="316" y="122" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1593496755715" />
+    <state x="532" y="237" key="run.anything.popup" timestamp="1593312602947">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="532" y="237" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1593312602947" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1593321925334">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1593321925334" />
+  </component>
+</project>
