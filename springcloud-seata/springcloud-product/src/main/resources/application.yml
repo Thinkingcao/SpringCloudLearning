@@ -1,20 +1,56 @@
+#port端口配置
 server:
-  port: 8081
+  port: 8082
+#spring相关配置
 spring:
+  #服务名
   application:
-    name: service-product
+    name: product-service
+  #数据源配置，需要预先创建shop-product数据库
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql:///shop?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=true
+    url: jdbc:mysql:///shop-product?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=true
     username: root
     password: 123456
+  #JPA持久层框架配置
   jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
     properties:
       hibernate:
-        hbm2ddl:
-          auto: update
         dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+  #服务注册到Nacos
   cloud:
     nacos:
       discovery:
         server-addr: localhost:8848
+#Seata分布式事务配置(AT模式)
+seata:
+  enabled: true
+  application-id: ${spring.application.name}
+  tx-service-group: my_test_tx_group
+  enable-auto-data-source-proxy: true
+  config:
+    type: file
+#    nacos:
+#      namespace:
+#      serverAddr: 127.0.0.1:8848
+#      group: SEATA_GROUP
+#      username: "nacos"
+#      password: "nacos"
+  registry:
+    type: nacos
+    nacos:
+      application: seata-server
+      server-addr: 127.0.0.1:8848
+      group: SEATA_GROUP
+      namespace:
+      username: "nacos"
+      password: "nacos"
+
+#Ribbon超时设置
+ribbon:
+  ReadTimeout: 5000
+  ConnectTimeout: 5000

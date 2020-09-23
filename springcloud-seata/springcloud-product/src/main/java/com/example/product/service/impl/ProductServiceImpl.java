@@ -1,7 +1,7 @@
 package com.example.product.service.impl;
 
+import com.example.common.product.entity.Product;
 import com.example.product.dao.ProductDao;
-import com.example.product.entity.Product;
 import com.example.product.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -23,6 +23,11 @@ public class ProductServiceImpl implements ProductService {
         return productDao.findById(pid).get();
     }
 
+    /**
+     * 扣减库存
+     * @param pid
+     * @param number
+     */
     @Transactional
     @Override
     public void reduceInventory(Integer pid, Integer number) {
@@ -34,9 +39,9 @@ public class ProductServiceImpl implements ProductService {
         product.setStock(product.getStock() - number);
 
         //模拟异常
-        //int i = 1 / 0;
+        int i = 1 / 0;
 
-        //保存
+        //保存扣减库存
         productDao.save(product);
     }
 

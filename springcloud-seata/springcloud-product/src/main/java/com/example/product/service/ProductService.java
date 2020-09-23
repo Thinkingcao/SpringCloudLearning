@@ -1,6 +1,6 @@
 package com.example.product.service;
 
-import com.example.common.entity.Product;
+import com.example.common.product.entity.Product;
 
 /**
  * @desc:

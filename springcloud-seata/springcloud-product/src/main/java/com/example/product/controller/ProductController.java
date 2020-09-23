@@ -1,7 +1,7 @@
 package com.example.product.controller;
 
 import com.alibaba.fastjson.JSON;
-import com.example.common.entity.Product;
+import com.example.common.product.entity.Product;
 import com.example.product.service.ProductService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
