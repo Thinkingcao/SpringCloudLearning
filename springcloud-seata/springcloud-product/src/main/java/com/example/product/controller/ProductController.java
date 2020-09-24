@@ -16,15 +16,30 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @Slf4j
+@RequestMapping("/product")
 public class ProductController {
 
     @Autowired
     private ProductService productService;
 
-    //扣减库存
-    @RequestMapping("/product/reduceInventory")
-    public void reduceInventory(Integer pid, Integer number) {
-        productService.reduceInventory(pid, number);
+    /**
+     * 扣减库存，正常->模拟全局事务提交
+     * @param pid
+     * @param number
+     */
+    @RequestMapping("/reduceInventory/commit")
+    public void reduceInventoryCommit(Integer pid, Integer number) {
+        productService.reduceInventoryCommit(pid, number);
+    }
+
+    /**
+     * 扣减库存，异常->模拟全局事务回滚
+     * @param pid
+     * @param number
+     */
+    @RequestMapping("/reduceInventory/rollback")
+    public void reduceInventoryRollback(Integer pid, Integer number) {
+        productService.reduceInventoryRollback(pid, number);
     }
 
     //商品信息查询

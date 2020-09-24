@@ -24,9 +24,8 @@ public class OrderServiceImpl {
     @Autowired
     private ProductService productService;
 
-
-    @GlobalTransactional//全局事务控制
-    public Order createOrder(Integer pid) {
+    //用户下单，模拟全局事务提交
+    public Order createOrderCommit(Integer pid) {
         log.info("接收到{}号商品的下单请求,接下来调用商品微服务查询此商品信息", pid);
 
         //1 调用商品微服务,查询商品信息
@@ -45,7 +44,33 @@ public class OrderServiceImpl {
         log.info("创建订单成功,订单信息为{}", JSON.toJSONString(order));
 
         //3 扣库存m
-        productService.reduceInventory(pid, order.getNumber());
+        productService.reduceInventoryCommit(pid, order.getNumber());
+
+        return order;
+    }
+
+    //用户下单，模拟全局事务回滚
+    @GlobalTransactional//全局事务控制
+    public Order createOrderRollback(Integer pid) {
+        log.info("接收到{}号商品的下单请求,接下来调用商品微服务查询此商品信息", pid);
+
+        //1 调用商品微服务,查询商品信息
+        Product product = productService.findByPid(pid);
+        log.info("查询到{}号商品的信息,内容是:{}", pid, JSON.toJSONString(product));
+
+        //2 下单(创建订单)
+        Order order = new Order();
+        order.setUid(1);
+        order.setUsername("测试用户");
+        order.setPid(pid);
+        order.setPname(product.getPname());
+        order.setPprice(product.getPprice());
+        order.setNumber(1);
+        orderDao.save(order);
+        log.info("创建订单成功,订单信息为{}", JSON.toJSONString(order));
+
+        //3 扣库存m
+        productService.reduceInventoryRollback(pid, order.getNumber());
 
         return order;
     }

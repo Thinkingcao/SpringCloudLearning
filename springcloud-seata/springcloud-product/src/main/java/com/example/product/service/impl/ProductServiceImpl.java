@@ -3,12 +3,12 @@ package com.example.product.service.impl;
 import com.example.common.product.entity.Product;
 import com.example.product.dao.ProductDao;
 import com.example.product.service.ProductService;
+import io.seata.spring.annotation.GlobalTransactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 /**
- * @desc:
+ * @desc:  商品服务实现类
  * @author: cao_wencao
  * @date: 2020-09-22 23:20
  */
@@ -24,13 +24,32 @@ public class ProductServiceImpl implements ProductService {
     }
 
     /**
-     * 扣减库存
+     * 扣减库存，正常->模拟全局事务提交
      * @param pid
      * @param number
      */
-    @Transactional
     @Override
-    public void reduceInventory(Integer pid, Integer number) {
+    public void reduceInventoryCommit(Integer pid, Integer number) {
+        //查询
+        Product product = productDao.findById(pid).get();
+        //省略校验
+
+        //内存中扣减
+        product.setStock(product.getStock() - number);
+
+        //保存扣减库存
+        productDao.save(product);
+    }
+
+    /**
+     * 扣减库存，异常->模拟全局事务回滚
+     * @param pid
+     * @param number
+     */
+    @GlobalTransactional
+    //@Transactional(rollbackFor = Exception.class)
+    @Override
+    public void reduceInventoryRollback(Integer pid, Integer number) {
         //查询
         Product product = productDao.findById(pid).get();
         //省略校验
