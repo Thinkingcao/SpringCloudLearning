@@ -3,9 +3,9 @@ package com.example.product.service.impl;
 import com.example.common.product.entity.Product;
 import com.example.product.dao.ProductDao;
 import com.example.product.service.ProductService;
-import io.seata.spring.annotation.GlobalTransactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * @desc:  商品服务实现类
@@ -46,8 +46,7 @@ public class ProductServiceImpl implements ProductService {
      * @param pid
      * @param number
      */
-    @GlobalTransactional
-    //@Transactional(rollbackFor = Exception.class)
+    @Transactional(rollbackFor = Exception.class)  //服务提供方本地事务注解
     @Override
     public void reduceInventoryRollback(Integer pid, Integer number) {
         //查询
