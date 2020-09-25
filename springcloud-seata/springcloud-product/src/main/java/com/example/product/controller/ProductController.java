@@ -2,6 +2,7 @@ package com.example.product.controller;
 
 import com.alibaba.fastjson.JSON;
 import com.example.common.product.entity.Product;
+import com.example.common.utils.ServletUtils;
 import com.example.product.service.ProductService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,6 +30,8 @@ public class ProductController {
      */
     @RequestMapping("/reduceInventory/commit")
     public void reduceInventoryCommit(Integer pid, Integer number) {
+        String token = ServletUtils.getRequest().getHeader("token");
+        log.info("从head请求头透传过来的值为token："+ token);
         productService.reduceInventoryCommit(pid, number);
     }
 
