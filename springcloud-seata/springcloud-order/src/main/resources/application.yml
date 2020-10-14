@@ -37,12 +37,12 @@ seata:
   enable-auto-data-source-proxy: true
   config:
     type: file
-#    nacos:
-#      namespace:
-#      serverAddr: 127.0.0.1:8848
-#      group: SEATA_GROUP
-#      username: "nacos"
-#      password: "nacos"
+    nacos:
+      namespace: "sandbox-seata"
+      serverAddr: 127.0.0.1:8848
+      group: SEATA_GROUP
+      username: "nacos"
+      password: "nacos"
   #服务注册到nacos
   registry:
     type: nacos
@@ -50,7 +50,7 @@ seata:
       application: seata-server
       server-addr: 127.0.0.1:8848
       group: SEATA_GROUP
-      namespace:
+      namespace: "sandbox-seata"
       username: "nacos"
       password: "nacos"
 
