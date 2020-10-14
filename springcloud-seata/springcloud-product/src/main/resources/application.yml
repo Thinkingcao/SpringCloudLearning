@@ -54,3 +54,22 @@ seata:
 ribbon:
   ReadTimeout: 5000
   ConnectTimeout: 5000
+
+#配置让所有 FeignClient，使用FeignRequestInterceptor
+#feign:
+#  hystrix:
+#    enabled: true
+#  client:
+#    config:
+#      default:
+#        connectTimeout: 5000
+#        readTimeout: 5000
+#        loggerLevel: basic
+#        requestInterceptors: com.example.order.config.FeignRequestInterceptor
+#修改默认隔离策略为信号量模式
+#hystrix:
+#  command:
+#    default:
+#      execution:
+#        isolation:
+#          strategy: SEMAPHORE
