@@ -1,0 +1,15 @@
+eureka:
+  client:
+    serviceUrl: #注册中心的注册地址
+      defaultZone: http://127.0.0.1:8081/eureka/
+  instance:
+    #心跳检测与续约时间（开发环境可以将值设小一点，保证服务关闭后注册中心能及时剔除）
+    lease-expiration-duration-in-seconds: 15
+    #Eureka客户端向服务端发送心跳的时间间隔，单位为秒（客户端告诉服务端自己会遵循该规则）
+    lease-renewal-interval-in-seconds: 5
+server:
+  port: 8093  #服务端口号
+spring:
+  application:
+    name: product-client #服务名称--调用的时候根据名称来调用该服务的方法
+

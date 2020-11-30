@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/eureka-opensource-example.iml" filepath="$PROJECT_DIR$/.idea/eureka-opensource-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/product-client/product-client.iml" filepath="$PROJECT_DIR$/product-client/product-client.iml" />
+    </modules>
+  </component>
+</project>
