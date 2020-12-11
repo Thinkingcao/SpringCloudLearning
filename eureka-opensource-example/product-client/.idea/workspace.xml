@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="82680173-1821-46ed-9776-171d4b8ec0bc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../springcloud-seata/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../springcloud-seata/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../springcloud-seata/springcloud-product/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../springcloud-seata/springcloud-product/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="82680173-1821-46ed-9776-171d4b8ec0bc" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +19,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/Thinkingcao/SpringCloudLearning" />
+        <option value="https://github.com/Thinkingcao/springcloud_nacos_client.git" />
+      </set>
+    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -88,7 +93,9 @@
       <workItem from="1606443875900" duration="6459000" />
       <workItem from="1606466232547" duration="3729000" />
       <workItem from="1606701628788" duration="726000" />
-      <workItem from="1606702569024" duration="29000" />
+      <workItem from="1606702569024" duration="1683000" />
+      <workItem from="1607070761205" duration="5000" />
+      <workItem from="1607305521538" duration="27000" />
     </task>
     <servers />
   </component>

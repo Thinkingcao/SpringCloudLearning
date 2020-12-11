@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="91b4c595-fc0f-45da-b79e-e3f9cc34ec63" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../springcloud-seata/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../springcloud-seata/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../springcloud-seata/springcloud-product/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../springcloud-seata/springcloud-product/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="91b4c595-fc0f-45da-b79e-e3f9cc34ec63" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,7 +88,7 @@
       <workItem from="1606443839157" duration="11034000" />
       <workItem from="1606466560030" duration="3057000" />
       <workItem from="1606700985402" duration="1213000" />
-      <workItem from="1606702560677" duration="41000" />
+      <workItem from="1606702560677" duration="1072000" />
     </task>
     <servers />
   </component>
