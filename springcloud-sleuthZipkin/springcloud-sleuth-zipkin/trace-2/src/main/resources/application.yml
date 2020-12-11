@@ -1,0 +1,24 @@
+server:
+  port: 9102
+spring:
+  application:
+    name: trace-2
+  sleuth:
+    sampler:
+      probability: 1
+  zipkin:
+#    base-url: http://localhost:9411
+    sender:
+      type: rabbit
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: springcloud
+    password: admin
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+feign:
+  hystrix:
+    enabled: true
